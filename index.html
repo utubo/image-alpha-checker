@@ -99,12 +99,6 @@ h1 {
       const wtx = work.getContext('2d');
       const fileInput = document.getElementById('fileInput');
 
-      // For red, green and blue.
-      const v = 3;
-      const c1 = Math.floor(255 / v);
-      const c2 = 255 - c1;
-      const c3 = Math.floor(c2 / 2);
-
       function handleDragOver(event) {
         event.preventDefault();
         event.stopPropagation();
@@ -191,6 +185,7 @@ h1 {
         }
       });
       fileInput.addEventListener('change', handleDrop);
+
       document.documentElement.lang = navigator.language || 'en';
     </script>
   </body>
