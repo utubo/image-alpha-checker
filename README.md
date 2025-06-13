@@ -1,4 +1,4 @@
-# Image alpha channel checker.
+# Image alpha checker.
 
 This is a simple alpha channel checker.
 
