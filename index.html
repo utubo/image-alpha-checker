@@ -137,8 +137,8 @@ h1 {
               cx = cy;
               for (let x = 0; x < img.width; x += grid) {
                 cx = !cx;
-                ctx.fillStyle = cx ? '#ddd' : '#aaa';
-                ctx.rect(x, y, grid, grid);
+                ctx.fillStyle = cx ? '#ddd' : '#eee';
+                ctx.fillRect(x, y, grid, grid);
               }
             }
 
