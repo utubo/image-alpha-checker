@@ -185,7 +185,11 @@ h1 {
 
       addEventListener('dragover', handleDragOver);
       addEventListener('drop', handleDrop);
-      addEventListener('click', () => fileInput.click());
+      addEventListener('click', e => {
+        if (e.target.tagName !== 'svg' && e.target !== fileInput) {
+          fileInput.click();
+        }
+      });
       fileInput.addEventListener('change', handleDrop);
       document.documentElement.lang = navigator.language || 'en';
     </script>
